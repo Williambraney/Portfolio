@@ -1,0 +1,15 @@
+.educationWrapper {
+    margin-top: 10vw;
+}
+
+.educationList {
+    display: flex;
+    justify-content: center;
+} 
+
+.education {
+    text-align: center;
+}
+.color {
+    color: black;
+}

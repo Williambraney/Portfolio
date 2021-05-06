@@ -1,0 +1,30 @@
+.ContactMeSection {
+    margin-top: 10vw;
+}
+
+.socialLinks {
+    height: 15vw;
+    transition: transform .2s;
+}
+.socialLinks:hover {
+    transform: scale(1.2);
+}
+
+.svg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactMeParagraph {
+    margin-top: 3rem;
+    font-size: 2vw;
+    width: 53rem;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    color: rgba(31, 151, 199, 0.856);
+    margin-top: 1.5vw;
+    font-size: 1.5vw;
+}

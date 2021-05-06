@@ -1,0 +1,55 @@
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60rem;
+    font-size: 1.1vw;
+}
+.skillsSection {
+    margin-top: 7vw;
+}
+.skillsList{
+    margin-bottom: 4rem;
+}
+.card-text {
+    color: black;
+}
+.cardText2 {
+    color: black;
+    margin-bottom: 26%;
+}
+.projects {
+    display: flex;
+}
+li {
+    list-style-type: none;
+}
+.card {
+    margin-left: 1rem;
+    color: rgba(31, 151, 199, 0.856);
+}
+.codeLink {
+    color: white;
+}
+.btn {
+    margin-bottom: 1rem;
+    margin-left: 2%;
+    color: rgba(31, 151, 199, 0.856);
+}
+.cardButtons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.cardButtons2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.cardButtons3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.types {
+    font-weight: bold;
+}
