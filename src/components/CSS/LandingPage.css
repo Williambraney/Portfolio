@@ -182,3 +182,8 @@ body {
 .space {
   padding-top: 5rem;
 }
+
+.contactMeNav:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

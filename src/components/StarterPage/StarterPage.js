@@ -1,7 +1,6 @@
 import {Component} from "react"
 import "../CSS/LandingPage.css"
 import About from  "../About" 
-import { Link, animateScroll as scroll } from "react-scroll";
 import TechnicalSkills from "../TechnicalSkills";
 import Projects from "../Projects/Projects";
 import Education from "../Education";
@@ -17,10 +16,27 @@ class StarterPage extends Component {
         this.StartWebsite = this.StartWebsite.bind(this);
     }
 
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll); 
-    }
+        componentDidMount() {
+            window.addEventListener('scroll', this.handleScroll);
+            window.addEventListener('scrollAnimation', this.handleScrollAnimation);
+            window.addEventListener('scrollContactMe', this.handleScrollContactMe);
+        }
 
+        handleScrollContactMe(){
+            window.scrollTo({
+                top: 3180,
+                left: 0,
+                behavior: 'smooth',
+            })
+        }
+
+        handleScrollAnimation(){
+            window.scrollTo({
+                top: 600,
+                left: 0,
+                behavior: 'smooth',
+            })
+        }
         handleScroll() {
             let header = document.getElementById("header")
             if(window.pageYOffset > "140"){
@@ -42,28 +58,7 @@ class StarterPage extends Component {
                 document.getElementById("CVLink").style.opacity = "0"
             }
     }
-scrollToTop() {
-  scroll.scrollToTop();
-}
 
-scrollMoreUp300() {
-  scroll.scrollMore(-300);
-}
-
- scrollMoreUp100() {
-  scroll.scrollMore(-100);
-}
-
- scrollToBottom() {
-  scroll.scrollToBottom();
-}
-
- scrollMoreDown300() {
-  scroll.scrollMore(200);
-}
- scrollMoreDown100() {
-  scroll.scrollMore(100);
-}
 
     StartWebsite(){
         this.props.StartWebsite()
@@ -79,12 +74,12 @@ scrollMoreUp300() {
                 <div id="top">
                     <h3 id="nameNav">William Braney</h3>
                     <nav id="nameNav" className="nameNav3">
-                    <h3 id="nameNav2"><a href="about">Contact Me</a></h3>
+                    <h3 id="nameNav2" className="contactMeNav" onClick={this.handleScrollContactMe}>Contact Me</h3>
                     <a  id="CVLink"className="CVLink" href={CVPDF} download><h3 id="CVLink"className="CVLink">Download CV</h3></a>
                     </nav>
                 </div>
-                <h2 onScroll={this.handleScroll} id="header" className="header animate__animated animate__fadeIn">William Braney <br /> <span id="subtitle" className="subtitle">Junior Web Developer</span></h2>
-                <Link  activeClass="active" to="about" spy={true} smooth={true} duration={1000} id="buttonEnter"className="buttonEnter animate__animated animate__fadeIn arrow bounce"></Link>
+                <h2 onScroll={this.handleScroll} id="header" className="header">William Braney <br /> <span id="subtitle" className="subtitle">Junior Web Developer</span></h2>
+                <div onClick={this.handleScrollAnimation}  id="buttonEnter" className="buttonEnter animate__animated animate__fadeIn arrow bounce"></div>
                 <About />
                 <TechnicalSkills />
                 <Projects />

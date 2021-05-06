@@ -1,5 +1,9 @@
 import {Component} from "react"
 import {Card, Button} from "react-bootstrap"
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 class Projects extends Component {
     constructor(props) {
         super(props);
@@ -8,9 +12,11 @@ class Projects extends Component {
     render() {
         return (
             <div className="projectsSection">
+                <div data-aos="fade-up" data-aos-duration="2000">
             <h1 className="aboutTitle">Projects</h1>
+            </div>
             <div className="projects">
-            <Card style={{ width: '18rem' }}>
+            <Card data-aos="fade-right" data-aos-duration="1500" style={{ width: '18rem' }}>
             {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
             <Card.Body>
                 <Card.Title>Table Tennis Tournament Generator</Card.Title>
@@ -24,7 +30,7 @@ class Projects extends Component {
                 </div>
             </Card.Body>
             </Card>
-                        <Card style={{ width: '18rem' }}>
+                        <Card  data-aos="fade-up" data-aos-duration="1000" style={{ width: '18rem' }}>
             {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
             <Card.Body>
                 <Card.Title>Table Tennis Scoring Application</Card.Title>
@@ -38,7 +44,7 @@ class Projects extends Component {
                 </div>
             </Card.Body>
             </Card>
-                        <Card style={{ width: '18rem' }}>
+                        <Card data-aos="fade-left" data-aos-duration="1000" style={{ width: '18rem' }}>
             {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
             <Card.Body>
                 <Card.Title>Book Search Application</Card.Title>

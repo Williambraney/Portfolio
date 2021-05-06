@@ -10,14 +10,14 @@ class TechnicalSkills extends Component {
             <div className="skillsSection">
             <h1 className="aboutTitle">Skills</h1>
             <div className="skills">
-            <ul className="skillsList">
+            <ul className="skillsList" data-aos="zoom-in" data-aos-duration="1000">
                 <h3>Web Technologies</h3>
                 <li>HTML5</li>
                 <li>CSS</li>
                 <li>Javascript (Vanilla & Dom)</li>
                 <li>Object Orientated PHP</li>
             </ul>
-            <ul className="skillsList">
+            <ul className="skillsList" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
                 <h3>Frameworks</h3>
                 <li>React</li>
                 <li>Redux</li>
