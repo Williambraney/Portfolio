@@ -8,19 +8,19 @@ class Education extends Component {
     render() {
         return (
             <div className="educationWrapper">
-            <h1 className="aboutTitle">Education</h1>
+            <h1 className="aboutTitle" data-aos="fade-up" data-aos-duration="2000">Education</h1>
             <div className="education">
-                <section>
+                <section data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="bottom-bottom">
                     <h3 className="color">Develop Me / <span className="color">Full Stack Software Development</span></h3>
                     <h5>JANUARY 2021 - MARCH 2021,  Bristol / Remote</h5>
                     <p>Intensive project-driven 12 week software development on the webstack course, taught by industry professionals using best practice approaches.</p>
                 </section>
-                <section>
+                <section data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="bottom-bottom">
                     <h3 className="color">Southampton Solent University / Computing / <span className="color">2 Years Completed</span></h3>
                     <h5>September 2017 - July 2020,  Southampton</h5>
                     <p>Successfully passed two years of the degree with an average grade of 2:1 before deciding that a Full Stack Development Course was a better fit for my career.</p>
                 </section>
-                <section>
+                <section data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="bottom-bottom">
                     <h3 className="color">Colchester Sixth Form / <span className="color">AS & A Levels</span></h3>
                     <h5>September 2014 - July 2017,  Colchester</h5>
                     <div className="educationList">

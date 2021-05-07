@@ -37,6 +37,9 @@ class StarterPage extends Component {
                 behavior: 'smooth',
             })
         }
+        handleScrollHeader() {
+            
+        }
         handleScroll() {
             let header = document.getElementById("header")
             if(window.pageYOffset > "140"){
